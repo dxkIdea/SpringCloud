@@ -63,6 +63,7 @@
         <module>SpringCloud-Ribbon-Server</module>
         <module>SpringCloud-Zuul-Server</module>
         <module>SpringCloud-Service-Email</module>
+        <module>SpringBoot-Admin-Server</module>
     </modules>
 
 

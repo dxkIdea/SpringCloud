@@ -1,0 +1,46 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: admin-server
+  #配置SpringBoot-Admin Client连接的安全账号密码
+  security:
+    user:
+      name: admin
+      password: 123456
+
+
+# 关闭spring boot actuator的安全，否则敏感路径访问是401
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+      #eureka client刷新本地缓存时间
+      #默认30s
+    registry-fetch-interval-seconds: 5
+  instance:
+    appname: Admin-Server
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+    health-check-url-path: /actuator/health
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        #暴露所有端点
+        include: "*"
+        #选择暴露的端点
+        #include: info,health,env,beans
+        #不暴露的端点
+        #exclude: env
+  endpoint:
+    #health endpoint是否必须显示全部细节。默认情况下, /actuator/health 是公开的，并且不显示细节
+    health:
+      show-details: always
+
