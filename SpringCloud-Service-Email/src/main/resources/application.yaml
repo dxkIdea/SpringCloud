@@ -1,0 +1,26 @@
+server:
+  port: 9092
+
+spring:
+  application:
+    name: Email
+  mail:
+    #QQ邮箱服务器
+    host: smtp.qq.com
+    #QQ邮箱账户
+    username: 979352276@qq.com
+    #QQ邮箱第三方授权码
+    password: estppbjjqlaxbehi
+    default-encoding: UTF-8
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+      #eureka client刷新本地缓存时间
+      #默认30s
+    registry-fetch-interval-seconds: 5
+  instance:
+    appname: Email
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}

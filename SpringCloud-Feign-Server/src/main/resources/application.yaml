@@ -1,9 +1,9 @@
 server:
-  port: 9092
+  port: 8083
 
 spring:
   application:
-    name: Email
+    name: Feign
 
 eureka:
   client:
@@ -13,6 +13,7 @@ eureka:
       #默认30s
     registry-fetch-interval-seconds: 5
   instance:
-    appname: Email
+    appname: Feign
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
