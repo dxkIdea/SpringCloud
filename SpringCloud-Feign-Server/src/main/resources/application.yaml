@@ -17,3 +17,9 @@ eureka:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
 
+ribbon:
+  eureka:
+    enabled: true
+feign:
+  hystrix:
+    enabled: true

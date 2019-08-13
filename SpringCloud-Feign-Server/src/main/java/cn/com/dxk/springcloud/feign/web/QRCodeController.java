@@ -14,4 +14,9 @@ public class QRCodeController {
     public String getQrCode (@RequestParam String content) {
         return qrCodeService.getQrCode(content);
     }
+
+    @RequestMapping(value = "hello")
+    public String hello() {
+        return qrCodeService.hello();
+    }
 }
