@@ -1,4 +1,4 @@
-package cn.com.dxk.springcloud.ribbon;
+package cn.com.dxk.springcloud.ribbon.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

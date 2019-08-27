@@ -65,6 +65,8 @@
         <module>SpringCloud-Service-Email</module>
         <module>SpringBoot-Admin-Server</module>
         <module>SpringCloud-Feign-Server</module>
+        <module>SpringCloud-Config-Server</module>
+        <module>SpringCloud-Config-Client</module>
     </modules>
 
 

@@ -1,0 +1,32 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+          git:
+            #配置git仓库地址
+            uri: https://github.com/dxkIdea/SpringCloud/
+            #配置仓库路径
+            search-paths: config-server
+      #配置仓库的分支
+      label: master
+      #访问git仓库的用户名、密码
+      name:
+      password:
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+      #eureka client刷新本地缓存时间
+      #默认30s
+    registry-fetch-interval-seconds: 5
+  instance:
+    appname: config-server
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}

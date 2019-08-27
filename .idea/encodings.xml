@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Admin-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-Config-Client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-Config-Server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud-Eureka-Server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud-Feign-Server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud-Ribbon-Server" charset="UTF-8" />

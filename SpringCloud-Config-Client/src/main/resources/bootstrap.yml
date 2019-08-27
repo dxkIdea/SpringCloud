@@ -1,0 +1,26 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://127.0.0.1:8084
+      #label: master
+      name: client
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+      #eureka client刷新本地缓存时间
+      #默认30s
+    registry-fetch-interval-seconds: 5
+  instance:
+    appname: config-client
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}

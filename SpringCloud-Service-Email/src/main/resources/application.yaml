@@ -10,7 +10,7 @@ spring:
     #QQ邮箱账户
     username: 979352276@qq.com
     #QQ邮箱第三方授权码
-    password: estppbjjqlaxbehi
+    password:
     default-encoding: UTF-8
 
 eureka:

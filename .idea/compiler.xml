@@ -9,6 +9,8 @@
         <module name="SpringCloud-Service-Email" />
         <module name="SpringBoot-Admin-Server" />
         <module name="SpringCloud-Eureka-Server" />
+        <module name="SpringCloud-Config-Client" />
+        <module name="SpringCloud-Config-Server" />
         <module name="SpringCloud-Feign-Server" />
         <module name="SpringCloud-Service-QRcode" />
         <module name="SpringCloud-Zuul-Server" />
@@ -19,6 +21,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBoot-Admin-Server" options="-parameters" />
+      <module name="SpringCloud-Config-Client" options="-parameters" />
+      <module name="SpringCloud-Config-Server" options="-parameters" />
       <module name="SpringCloud-Eureka-Server" options="-parameters" />
       <module name="SpringCloud-Feign-Server" options="-parameters" />
       <module name="SpringCloud-Ribbon-Server" options="-parameters" />
