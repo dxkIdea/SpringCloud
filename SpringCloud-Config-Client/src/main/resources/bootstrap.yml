@@ -12,6 +12,16 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
+    bus:
+      refresh:
+        enabled: true
+
+  #rabbitmq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
@@ -24,3 +34,9 @@ eureka:
     appname: config-client
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

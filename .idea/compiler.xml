@@ -9,12 +9,12 @@
         <module name="SpringCloud-Service-Email" />
         <module name="SpringBoot-Admin-Server" />
         <module name="SpringCloud-Eureka-Server" />
-        <module name="SpringCloud-Config-Client" />
         <module name="SpringCloud-Config-Server" />
         <module name="SpringCloud-Feign-Server" />
-        <module name="SpringCloud-Service-QRcode" />
+        <module name="SpringCloud-Config-Client" />
         <module name="SpringCloud-Zuul-Server" />
         <module name="SpringCloud-Ribbon-Server" />
+        <module name="SpringCloud-Service-QRcode" />
       </profile>
     </annotationProcessing>
   </component>
