@@ -67,6 +67,7 @@
         <module>SpringCloud-Feign-Server</module>
         <module>SpringCloud-Config-Server</module>
         <module>SpringCloud-Config-Client</module>
+        <module>SpringCloud-Zipkin-Server</module>
     </modules>
 
 

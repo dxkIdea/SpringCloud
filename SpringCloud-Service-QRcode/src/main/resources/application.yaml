@@ -1,0 +1,44 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: QRcode
+  zipkin:
+      base-url: http://127.0.0.1:9411/
+      sender:
+        type: web
+      sleuth:
+        sampler:
+          probability: 1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+      #eureka client刷新本地缓存时间
+      #默认30s
+    registry-fetch-interval-seconds: 5
+  instance:
+    appname: QRcode
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        #暴露所有端点
+        include: "*"
+        #选择暴露的端点
+        #include: info,health,env,beans
+        #不暴露的端点
+        #exclude: env
+  endpoint:
+    #health endpoint是否必须显示全部细节。默认情况下, /actuator/health 是公开的，并且不显示细节
+    health:
+      show-details: always
+    shutdown:
+      enabled: true

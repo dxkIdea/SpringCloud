@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: Feign
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+    sender:
+      type: web
+    sleuth:
+      sampler:
+        probability: 1
 
 eureka:
   client:
@@ -21,5 +28,11 @@ ribbon:
   eureka:
     enabled: true
 feign:
+  httpclient:
+    connection-timeout: 20000
+    compression:
+      #request:
+        #mime-types: text/xml, application/xml, application/json
+  #feign调用使用熔断器，如果使用熔断器，但是不设置会报错（默认为false）
   hystrix:
     enabled: true

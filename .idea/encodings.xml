@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/SpringCloud-Ribbon-Server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud-Service-Email" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud-Service-QRcode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-Zipkin-Server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud-Zuul-Server" charset="UTF-8" />
   </component>
 </project>

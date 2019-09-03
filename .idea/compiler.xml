@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SpringCloud-Zipkin-Server" />
         <module name="SpringCloud-Service-Email" />
         <module name="SpringBoot-Admin-Server" />
         <module name="SpringCloud-Eureka-Server" />
@@ -28,6 +29,7 @@
       <module name="SpringCloud-Ribbon-Server" options="-parameters" />
       <module name="SpringCloud-Service-Email" options="-parameters" />
       <module name="SpringCloud-Service-QRcode" options="-parameters" />
+      <module name="SpringCloud-Zipkin-Server" options="-parameters" />
       <module name="SpringCloud-Zuul-Server" options="-parameters" />
     </option>
   </component>
